@@ -29,7 +29,7 @@ def remove_file(destination_path):
         for j in os.listdir(remove_file_path):
             remove_path = os.path.join(remove_file_path,j)
             
-            if((".py" and ".java") in remove_path):
+            if remove_path.endswith(".js") or remove_path.endswith(".java"):
                 os.remove(remove_path)
     
             
